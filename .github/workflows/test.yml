@@ -22,6 +22,9 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
 
+    - name: Prepare go module
+      run: go mod init github.com/jwilder/docker-gen
+
     - name: Get dependencies
       run: make get-deps
 
