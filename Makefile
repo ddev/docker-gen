@@ -45,6 +45,7 @@ release: dist
 
 get-deps:
 	go install .
+	go get github.com/robfig/glock
 	glock sync -n < GLOCKFILE
 
 check-gofmt:
