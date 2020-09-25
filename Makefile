@@ -44,7 +44,6 @@ release: dist
 #	tar -cvzf docker-gen-darwin-i386-$(TAG).tar.gz -C dist/darwin/i386 docker-gen
 
 get-deps:
-	go install .
 	go get github.com/robfig/glock
 	glock sync -n < GLOCKFILE
 
