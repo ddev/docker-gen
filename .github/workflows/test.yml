@@ -30,8 +30,5 @@ jobs:
             dep ensure
         fi
 
-    - name: Get dependencies
-      run: make get-deps
-
     - name: Run tests
       run: make all check-gofmt test
