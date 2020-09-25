@@ -434,13 +434,11 @@ $ docker-gen -notify "/bin/bash /tmp/etcd.sh" -interval 10 templates/etcd.tmpl /
 
 ### Development
 
-This project uses [glock](https://github.com/robfig/glock) for managing 3rd party dependencies.
-You'll need to install glock into your workspace before hacking on docker-gen.
+Run these commands to get started:
 
 ```
 $ git clone <your fork>
 $ cd <your fork>
-$ make get-deps
 $ make
 ```
 
@@ -452,3 +450,7 @@ $ make
 
 MIT
 
+## Creating a new release
+- Make sure all your changes are in the `master` branch and CI passes.
+- Run `git tag v1.x.x`, then `git push origin --tags`.
+- This will create a new git tag, which automatically triggers a release build that includes build artifacts 🚀
