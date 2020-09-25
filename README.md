@@ -452,5 +452,5 @@ MIT
 
 ## Creating a new release
 - Make sure all your changes are in the `master` branch and CI passes.
-- Run `git tag v1.x.x`, then `git push origin --tags`.
+- Run `git tag 0.x.x`, then `git push origin --tags`.
 - This will create a new git tag, which automatically triggers a release build that includes build artifacts 🚀
