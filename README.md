@@ -1,3 +1,5 @@
+# THIS FORK IS ONLY USED FOR BUILDING DDEV's legacy `ddev-nginx-proxy-router`, and is archived.
+
 docker-gen
 =====
 
